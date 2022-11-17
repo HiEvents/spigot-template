@@ -68,6 +68,7 @@ public class Utils {
 
         if (msg.contains("\n")){
             Arrays.stream(msg.split("\n")).forEach(s -> sendMSG(sender, s));
+            return;
         }
 
         if (sender instanceof Player) {
